@@ -194,7 +194,7 @@ class ProcessToSentinel:
         headers = {
             'content-type': content_type,
             'Authorization': signature,
-            'Log-Type': 'WAFLog02',
+            'Log-Type': 'ImpervaAttackAnalytics',
             'x-ms-date': rfc1123date
         }
         response = requests.post(uri, data=body, headers=headers)
